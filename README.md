@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="CustomGameRating/icon.png" width="96" alt="Custom Game Rating icon" />
+<img src="Plugin/icon.png" width="96" alt="Custom Game Rating icon" />
 
 # Custom Game Rating
 
