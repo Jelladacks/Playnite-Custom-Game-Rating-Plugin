@@ -1,0 +1,118 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Default (fallback) language. Every key must exist here.
+         Strings with line breaks (&#10;) or leading/trailing spaces need xml:space="preserve". -->
+
+    <!-- Common -->
+    <sys:String x:Key="LOC_CGR_NoRatingData">No rating data</sys:String>
+    <sys:String x:Key="LOC_CGR_Error">Error</sys:String>
+    <sys:String x:Key="LOC_CGR_Save">Save</sys:String>
+    <sys:String x:Key="LOC_CGR_Cancel">Cancel</sys:String>
+
+    <!-- Plugin menu / rating window -->
+    <sys:String x:Key="LOC_CGR_MenuWriteReview">Write/Edit My Rating</sys:String>
+    <sys:String x:Key="LOC_CGR_ReviewWindowTitle">{0} - My Rating</sys:String>
+    <sys:String x:Key="LOC_CGR_ReviewLoadError" xml:space="preserve">An error occurred while loading the rating.&#10;&#10;{0}</sys:String>
+
+    <!-- Default rating categories (created once on first run) -->
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Story">Story</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Gameplay">Gameplay</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Graphics">Graphics</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Sound">Sound</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Direction">Direction</sys:String>
+
+    <!-- Settings -->
+    <sys:String x:Key="LOC_CGR_Settings_CategoryHeader">Rating Categories</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_CategoryDesc1">Set the ID and display name of each rating category.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_CategoryDesc2">Categories with the same ID share the same score.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ColumnDisplayName">Display Name</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ColumnEnabled">Enabled</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ColumnOrder">Order</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_AddCategory">Add</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveCategory">Remove Selected</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_MoveUp">Up</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_MoveDown">Down</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveNote">Removing a category keeps the existing score data of your games.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_NewCategoryName">New Category</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_SelectCategoryToRemove">Please select a category to remove.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveConfirm" xml:space="preserve">Remove the selected category from the settings?&#10;&#10;Existing game scores will not be deleted.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveTitle">Remove Category</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_DataHeader">Rating Data</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_DataDesc">Back up your saved game ratings to a file, or restore them from a backup.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ExportBackup">Save Backup</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ImportBackup">Restore Backup</sys:String>
+
+    <!-- Backup / restore -->
+    <sys:String x:Key="LOC_CGR_Backup_FileFilter">JSON backup file (*.json)|*.json</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportTitle">Back Up Rating Data</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportDone" xml:space="preserve">Rating data has been backed up.&#10;&#10;Location:&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportDoneTitle">Backup Complete</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportError" xml:space="preserve">An error occurred during backup.&#10;&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportErrorTitle">Backup Failed</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportTitle">Select Rating Backup File</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportConfirm" xml:space="preserve">Your current data will be replaced with the rating data from the backup file.&#10;&#10;Saved game ratings and the category ID history will be overwritten by the backup.&#10;&#10;It is recommended to back up your current data before restoring.&#10;&#10;Do you want to continue?</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportConfirmTitle">Restore Rating Data</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportDone" xml:space="preserve">Rating data has been restored.&#10;&#10;Please restart Playnite to apply the changes.</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportDoneTitle">Restore Complete</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportError" xml:space="preserve">An error occurred during restore.&#10;&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportErrorTitle">Restore Failed</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_InvalidFile">This is not a valid rating backup file.</sys:String>
+
+    <!-- Rating panel in game details -->
+    <sys:String x:Key="LOC_CGR_Review_MyRating">My Rating</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_Detail">Detailed Rating</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_MyReview">My Review</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_ClickToRate">Click to rate</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_NotRatedYet">You haven't rated this game yet.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_ClickToRateHint">Click to write a rating.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_NoReviewText">No review written.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_LoadFailed">Failed to load the rating: {0}</sys:String>
+
+    <!-- Rating window -->
+    <sys:String x:Key="LOC_CGR_Review_ShortReview">Short Review</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_NoActiveCategories" xml:space="preserve">There are no enabled rating categories.&#10;Please add categories in the plugin settings.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_SaveError" xml:space="preserve">An error occurred while saving the rating.&#10;&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_SaveErrorTitle">Save Error</sys:String>
+
+    <!-- Statistics tab -->
+    <sys:String x:Key="LOC_CGR_StatisticsTitle">Game Rating Statistics</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Summary">Rating Summary</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_TotalGames">Total Games</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Rated">Rated</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Unrated">Unrated</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_OverallAverage">Average</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Progress">Rating Progress</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_MostGenerous">Most Generous Category</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Strictest">Strictest Category</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Highest">Highest Rated</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Lowest">Lowest Rated</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Latest">Latest Rated</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_RatedOn">Rated {0:yyyy.MM.dd}</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Preferred">Favorite Games</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Recent">Recently Rated</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_DoubleClickToOpen">Double-click to open the rating</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_CategoryAverages">Average Score by Category</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ScoreSuffix" xml:space="preserve"> pts</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Distribution">Score Distribution</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_AllRatings">All Ratings</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SearchGame">Search Games</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SearchTooltip">Search by game name</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortBy">Sort By</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortScoreDesc">Score (High to Low)</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortScoreAsc">Score (Low to High)</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortRecent">Recently Rated</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortName">Name</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_RatingStatus">Rating Status</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_FilterAllGames">All Games</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ScoreRange">Score Range</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_AllScores">All Scores</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_0_59">0-59</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_60_79">60-79</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_80_89">80-89</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_90_100">90-100</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ColumnGameName">Game Name</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ColumnScore">Overall Score</sys:String>
+
+</ResourceDictionary>

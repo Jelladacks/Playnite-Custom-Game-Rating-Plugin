@@ -1,0 +1,117 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- 줄바꿈(&#10;)이나 앞뒤 공백이 있는 문자열은 xml:space="preserve" 필요 -->
+
+    <!-- 공통 -->
+    <sys:String x:Key="LOC_CGR_NoRatingData">평가 데이터 없음</sys:String>
+    <sys:String x:Key="LOC_CGR_Error">오류</sys:String>
+    <sys:String x:Key="LOC_CGR_Save">저장</sys:String>
+    <sys:String x:Key="LOC_CGR_Cancel">취소</sys:String>
+
+    <!-- 플러그인 메뉴 / 평가 창 -->
+    <sys:String x:Key="LOC_CGR_MenuWriteReview">내 평가 작성/수정</sys:String>
+    <sys:String x:Key="LOC_CGR_ReviewWindowTitle">{0} - 내 게임 평가</sys:String>
+    <sys:String x:Key="LOC_CGR_ReviewLoadError" xml:space="preserve">평가를 불러오는 중 오류가 발생했습니다.&#10;&#10;{0}</sys:String>
+
+    <!-- 기본 평가 항목 (처음 설치 시 한 번만 생성됨) -->
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Story">스토리</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Gameplay">게임플레이</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Graphics">그래픽</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Sound">사운드</sys:String>
+    <sys:String x:Key="LOC_CGR_DefaultCategory_Direction">연출</sys:String>
+
+    <!-- 설정 화면 -->
+    <sys:String x:Key="LOC_CGR_Settings_CategoryHeader">평가 항목 관리</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_CategoryDesc1">각 평가 항목의 ID와 표시 이름을 설정할 수 있습니다.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_CategoryDesc2">같은 ID를 사용하는 항목은 동일한 점수를 공유합니다.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ColumnDisplayName">표시 이름</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ColumnEnabled">사용</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ColumnOrder">순서</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_AddCategory">항목 추가</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveCategory">선택 항목 삭제</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_MoveUp">위로</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_MoveDown">아래로</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveNote">항목을 삭제해도 기존 게임의 점수 데이터는 유지됩니다.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_NewCategoryName">새 평가 항목</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_SelectCategoryToRemove">삭제할 항목을 선택해 주세요.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveConfirm" xml:space="preserve">선택한 평가 항목을 설정에서 삭제할까요?&#10;&#10;기존 게임의 점수 데이터는 삭제되지 않습니다.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_RemoveTitle">평가 항목 삭제</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_DataHeader">평가 데이터 관리</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_DataDesc">현재까지 저장한 게임 평가 데이터를 파일로 백업하거나 복원할 수 있습니다.</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ExportBackup">백업 파일 저장</sys:String>
+    <sys:String x:Key="LOC_CGR_Settings_ImportBackup">백업 파일 복원</sys:String>
+
+    <!-- 백업 / 복원 -->
+    <sys:String x:Key="LOC_CGR_Backup_FileFilter">JSON 백업 파일 (*.json)|*.json</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportTitle">평가 데이터 백업</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportDone" xml:space="preserve">평가 데이터 백업이 완료되었습니다.&#10;&#10;저장 위치:&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportDoneTitle">백업 완료</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportError" xml:space="preserve">백업 중 오류가 발생했습니다.&#10;&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ExportErrorTitle">백업 실패</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportTitle">평가 데이터 백업 파일 선택</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportConfirm" xml:space="preserve">백업 파일의 평가 데이터로 현재 데이터를 교체합니다.&#10;&#10;현재 저장된 게임 평가와 평가 항목 ID 기록은 백업 파일의 내용으로 대체됩니다.&#10;&#10;복원하기 전에 현재 데이터를 별도로 백업하는 것을 권장합니다.&#10;&#10;계속 진행할까요?</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportConfirmTitle">평가 데이터 복원</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportDone" xml:space="preserve">평가 데이터 복원이 완료되었습니다.&#10;&#10;변경된 데이터가 반영되도록 Playnite를 재시작해 주세요.</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportDoneTitle">복원 완료</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportError" xml:space="preserve">복원 중 오류가 발생했습니다.&#10;&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_ImportErrorTitle">복원 실패</sys:String>
+    <sys:String x:Key="LOC_CGR_Backup_InvalidFile">올바른 평가 데이터 백업 파일이 아닙니다.</sys:String>
+
+    <!-- 게임 상세 화면의 평가 표시 -->
+    <sys:String x:Key="LOC_CGR_Review_MyRating">내 게임 평가</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_Detail">상세 평가</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_MyReview">내 후기</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_ClickToRate">클릭하여 평가 작성</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_NotRatedYet">아직 평가하지 않은 게임입니다.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_ClickToRateHint">클릭하여 평가를 작성하세요.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_NoReviewText">작성된 후기가 없습니다.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_LoadFailed">평가를 불러오지 못했습니다: {0}</sys:String>
+
+    <!-- 평가 작성 창 -->
+    <sys:String x:Key="LOC_CGR_Review_ShortReview">짧은 후기</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_NoActiveCategories" xml:space="preserve">활성화된 평가 항목이 없습니다.&#10;플러그인 설정에서 평가 항목을 추가해 주세요.</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_SaveError" xml:space="preserve">평가 저장 중 오류가 발생했습니다.&#10;&#10;{0}</sys:String>
+    <sys:String x:Key="LOC_CGR_Review_SaveErrorTitle">저장 오류</sys:String>
+
+    <!-- 평가 통계 탭 -->
+    <sys:String x:Key="LOC_CGR_StatisticsTitle">게임 평가 통계</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Summary">전체 평가 요약</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_TotalGames">전체 게임</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Rated">평가 완료</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Unrated">미평가</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_OverallAverage">전체 평균</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Progress">전체 게임 평가 진행률</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_MostGenerous">후한 평가 요소</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Strictest">깐깐한 평가 요소</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Highest">최고 평가 게임</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Lowest">최저 평가 게임</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Latest">최근 평가 게임</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_RatedOn">{0:yyyy.MM.dd} 평가</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Preferred">선호하는 게임</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Recent">최근 평가한 게임</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_DoubleClickToOpen">더블클릭하여 평가 열기</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_CategoryAverages">카테고리별 평균 점수</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ScoreSuffix">점</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Distribution">점수 분포</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_AllRatings">전체 평가 목록</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SearchGame">게임 검색</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SearchTooltip">게임 이름 검색</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortBy">정렬 기준</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortScoreDesc">종합 점수 높은 순</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortScoreAsc">종합 점수 낮은 순</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortRecent">최근 평가한 순</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_SortName">게임 이름순</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_RatingStatus">평가 여부</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_FilterAllGames">전체 게임</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ScoreRange">점수 구간</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_AllScores">전체 점수</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_0_59">0~59점</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_60_79">60~79점</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_80_89">80~89점</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_Range_90_100">90~100점</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ColumnGameName">게임 이름</sys:String>
+    <sys:String x:Key="LOC_CGR_Stats_ColumnScore">종합 점수</sys:String>
+
+</ResourceDictionary>
